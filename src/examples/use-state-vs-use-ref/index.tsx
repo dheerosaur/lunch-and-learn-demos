@@ -1,26 +1,18 @@
 import { useRef, useState } from "react";
 import "./styles.css";
 
-// This is an example showcasing how useRef and useState can be used for their
-// specific use cases.
-
 export default function Index() {
   return (
     <div>
       <h1>useState vs useRef</h1>
-      <hr />
 
-      <BasicExample />
-      <br />
-      <hr />
+      <div className="examples">
+        <BasicExample />
 
-      <DomReferenceExample />
-      <br />
-      <hr />
+        <DomReferenceExample />
 
-      <ScrollExample />
-      <br />
-      <hr />
+        <ScrollExample />
+      </div>
     </div>
   );
 }

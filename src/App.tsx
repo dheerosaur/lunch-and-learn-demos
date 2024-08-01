@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 
 const routes = [
   {
-    path: "/children-as-props",
-    name: "Children as Props",
+    path: "/move-state-down",
+    name: "Move State down",
   },
   {
-    path: "/contain-state",
-    name: "Contain State",
+    path: "/children-as-props",
+    name: "Children as Props",
   },
   {
     path: "/use-state-vs-use-ref",
@@ -23,7 +24,7 @@ function App() {
         <ol>
           {routes.map((route) => (
             <li key={route.path}>
-              <a href={route.path}>{route.name}</a>
+              <Link to={route.path}>{route.name}</Link>
             </li>
           ))}
         </ol>
