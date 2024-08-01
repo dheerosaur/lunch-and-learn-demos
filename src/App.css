@@ -23,3 +23,9 @@ nav ol {
   padding: 2rem;
   border: 1px solid #666;
 }
+
+.menu-circle {
+  display: flex;
+  max-width: 30rem;
+  justify-content: space-between;
+}
